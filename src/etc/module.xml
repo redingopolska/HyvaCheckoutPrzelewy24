@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Redingo - https://redingo.pl
+ * Copyright © Redingo 2024-present. All rights reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd"
+>
+  <module name="Hyva_RedingoPrzelewy24">
+    <sequence>
+        <module name="PayPro_Przelewy24" />
+        <module name="Hyva_CompatModuleFallback"/>
+    </sequence>
+  </module>
+</config>

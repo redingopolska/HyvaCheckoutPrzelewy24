@@ -1,0 +1,541 @@
+.przelewy24-insidebg {
+    width: 100%;
+    max-width: 730px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #F7F7FA;
+}
+
+#blik_img {
+    top: 20px;
+    bottom: 8px;
+    left: 10px;
+}
+
+.przelewy24-powered_by {
+    margin-left: 20px;
+    align-content: center;
+    background-image: url("https://przelewy24.com/img/banners/powered_by_przelewy24.svg");
+    background-size: 170px 33px;
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+    width: 170px;
+    height: 33px;
+    display: block;
+}
+
+#card_icons {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0 15px 0;
+}
+
+#card_icons .przelewy24-card_icon {
+    display: inline-block;
+    width: 44px;
+    height: 30px;
+    margin: 0 3px;
+    opacity: 0.6;
+    background-image: url('data:image/png;base64,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');
+    background-size: 320px;
+}
+
+#card_icons .przelewy24-card_icon.przelewy24-hover {
+    opacity: 1;
+}
+
+.przelewy24-card-icon {
+    position: absolute;
+    bottom: 12px;
+    right: 18px;
+}
+
+#saved_icon {
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.przelewy24-new-card-section {
+    padding-top: 7px;
+}
+
+.przelewy24-amPmCheckbox input[type="checkbox"] {
+    display: none;
+}
+
+#card_payment_form input.wrong,
+form select.wrong
+{
+    border: 1px solid #ff9696;
+    box-shadow: 0 1px 3px #dcdcdc;
+    background: #ffeeee;
+}
+
+.przelewy24-panel-inside-content input.wrong + label
+{
+    color: #ff9696;
+}
+
+#card_payment_form input.valid, form select.valid {
+    border: 1px solid #3BD16B;
+    box-shadow: 0 1px 3px #dcdcdc;
+    background: #f2fff6;
+}
+
+.przelewy24-groups-wrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 102%;
+    margin-left: -1%;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-holder {
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    width: 14%;
+    margin: 5px 1%;
+    height: 110px;
+    background: #FFF;
+    border-radius: 6px;
+    border-color: #FFF;
+    transition: box-shadow 125ms ease-out, border-color 125ms ease-out, opacity 125ms ease-out;
+    -webkit-transition: box-shadow 125ms ease-out, border-color 125ms ease-out, opacity 125ms ease-out;
+    -moz-transition: box-shadow 125ms ease-out, border-color 125ms ease-out, opacity 125ms ease-out;
+    -o-transition: box-shadow 125ms ease-out, border-color 125ms ease-out, opacity 125ms ease-out;
+}
+
+.hyva_checkout-index-index.page-layout-1column .przelewy24-groups-wrapper .przelewy24-group-holder {
+    width: 23%;
+    height: auto;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-holder {
+    opacity: 1;
+    cursor: pointer;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-holder:hover,
+.przelewy24-groups-wrapper .przelewy24-group-holder.przelewy24-loading,
+.przelewy24-groups-wrapper .przelewy24-group-holder.przelewy24-active {
+    background-color: #23aa4a1f;
+    border-color: #23aa4a91;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-holder.przelewy24-offline {
+    opacity: 0.85;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-holder.przelewy24-offline:hover,
+.przelewy24-groups-wrapper .przelewy24-group-holder.przelewy24-offline.przelewy24-loading,
+.przelewy24-groups-wrapper .przelewy24-group-holder.przelewy24-offline.przelewy24-active {
+    cursor: not-allowed;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-holder .przelewy24-offline-wrapper {
+    top: -8px;
+    right: -8px;
+    width: 60px;
+    height: 60px;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-holder .przelewy24-offline-wrapper::before,
+.przelewy24-groups-wrapper .przelewy24-group-holder .przelewy24-offline-wrapper::after {
+    border: 3px solid #AAA;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-holder .przelewy24-offline-wrapper span {
+    left: -14px;
+    top: 12px;
+    background-color: #AAA;
+    width: 97px;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-holder.przelewy24-active {
+    border-color: #3BD16B;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-holder-content {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-name {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 12px;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.przelewy24-groups-wrapper .przelewy24-with-logo .przelewy24-group-name {
+    display: none;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-logo-holder {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+}
+
+.przelewy24-groups-wrapper .przelewy24-group-logo-holder img {
+    max-width: 80%;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.przelewy24-groups-wrapper .przelewy24-line-preloader {
+    background-color: #FFF;
+}
+
+.przelewy24-groups-wrapper .przelewy24-channels-helper {
+    height: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 1%;
+    width: 98%;
+    overflow: hidden;
+    padding-top: 7px;
+}
+
+.przelewy24-groups-wrapper .przelewy24-channels-helper .przelewy24-channels-helper-arrow {
+    position: absolute;
+    top: 2px;
+    left: 330px;
+    background: #FFF;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+
+.przelewy24-groups-wrapper .przelewy24-channels-wrapper {
+    padding: 20px;
+}
+
+.przelewy24-groups-wrapper .przelewy24-content-wrapper-class {
+    background: #FFF;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.przelewy24-groups-wrapper .przelewy24-dev-info {
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    background: #D4D9FF;
+    font-size: 24px;
+    z-index: 100;
+}
+
+.przelewy24-groups-wrapper .przelewy24-dev-info:hover {
+    opacity: 0.7;
+}
+
+.przelewy24-groups-wrapper .przelewy24-dev-info-content {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+    .przelewy24-groups-wrapper .przelewy24-group-holder {
+        width: 31%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .przelewy24-groups-wrapper .przelewy24-group-holder {
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .przelewy24-groups-wrapper .przelewy24-group-holder {
+        width: 98%;
+    }
+}
+
+.przelewy24-header-wrapper {
+
+}
+
+.przelewy24-header-wrapper .przelewy24-header-logo {
+    overflow: hidden;
+}
+
+.przelewy24-header-wrapper .przelewy24-header-belt {
+
+}
+
+.przelewy24-logo {
+    max-height: 100px;
+    margin-bottom: 20px;
+    padding-left: 4%;
+    padding-top: 30px;
+}
+
+.przelewy24-panel-inside-content {
+    margin: 30px;
+    text-align: center;
+}
+
+.przelewy24-buttons-holder {
+    margin-top: 25px;
+}
+
+.przelewy24-pay-button {
+    border: 0;
+    outline: none;
+    color: #000000;
+    padding: 14px 13px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 35px;
+    background-image: linear-gradient(270deg, #91FEB2 0%, #3ED36D 100%);
+    width: 500px;
+    height:50px;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-info-text {
+    margin-bottom: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-form-wrapper {
+    overflow: hidden;
+    width: 102%;
+    margin-left: -1%;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-col {
+    width: 48%;
+    margin: 0 1%;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-input-wrapper {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-input-wrapper.przelewy24-expiration-date-input {
+    width: 47%;
+    display: inline-block;
+    padding-right: 4%;
+    margin-bottom: 10px;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-input-wrapper.przelewy24-cvv-input {
+    width: 47%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-input-wrapper.przelewy24-postcode {
+    float: left;
+    width: 40%;
+    margin-right: 3%;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-input-wrapper.przelewy24-city {
+    float: left;
+    width: 57%;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-input-wrapper .przelewy24-input-label {
+    background: #FFF;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-button-wrapper {
+    margin-top: 10px;
+}
+
+.przelewy24-channel-form-wrapper .przelewy24-button-wrapper .przelewy24-btn {
+    width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+    .przelewy24-channel-form-wrapper .przelewy24-col {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.przelewy24-input-wrapper {
+    position: relative;
+}
+
+.przelewy24-input-value::placeholder {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: rgba(103, 105, 134, 0.6);
+}
+
+.przelewy24-select,
+.przelewy24-input-wrapper .przelewy24-input-value {
+    background: transparent;
+    outline: none;
+    border: 1px solid #E8E8EE;
+    border-radius: 4px;
+    padding: 13px 20px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #1B2257;
+}
+
+.przelewy24-input-wrapper .przelewy24-input-value[disabled] {
+    color: #A6A7B8;
+}
+
+.przelewy24-input-wrapper.przelewy24-error .przelewy24-input-value {
+    border-color: #D85B5B;
+}
+
+.przelewy24-input-wrapper .przelewy24-input-value::-webkit-input-placeholder,
+.przelewy24-input-wrapper .przelewy24-input-value::-moz-placeholder,
+.przelewy24-input-wrapper .przelewy24-input-value:-ms-input-placeholder,
+.przelewy24-input-wrapper .przelewy24-input-value:-moz-placeholder {
+    color: #A1A2B5;
+}
+
+.przelewy24-input-wrapper .przelewy24-input-label {
+    position: absolute;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    color: #1B2257;
+    top: -8px;
+    left: 15px;
+    background: #F7F7FA;
+    padding: 0 5px;
+}
+
+.przelewy24-input-wrapper .przelewy24-errors-holder {
+    position: absolute;
+    left: 2px;
+    bottom: -18px;
+    color: #D85B5B;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    cursor: default;
+    text-align: left;
+}
+
+.przelewy24-input-wrapper .przelewy24-info-wrapper {
+    width: 100%;
+    padding: 7px 15px;
+    padding-top: 7px;
+    background: #F7F7FA;
+    border: 1px solid #E8E8EE;
+    border-top: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    box-sizing: border-box;
+    margin-top: -2px;
+    overflow: hidden;
+}
+
+.przelewy24-input-wrapper .przelewy24-button-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.przelewy24-input-wrapper .przelewy24-button-wrapper .przelewy24-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+    height: 25px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 10px;
+}
+
+.przelewy24-input-wrapper .przelewy24-button-wrapper .przelewy24-btn i {
+    display: none;
+}
+
+.przelewy24-input-cvc {
+    cursor: help;
+}
+
+.przelewy24-row {
+    overflow: hidden;
+}
+
+.przelewy24-col {
+    float: left;
+}
+
+.przelewy24-input-credit-card-number {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 98%;
+}
+
+.przelewy24-input-blik-code {
+    padding: 0 25% 5px 25%;
+}
+
+.przelewy24-cards-choice label,
+.przelewy24-cards-choice {
+    padding-left: 20px;
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: #1B2257;
+}
+
+.przelewy24-select {
+    margin-bottom: 25px;
+}
+
+.przelewy24-blik-input {
+    text-align: center;
+    letter-spacing: 10px;
+}
+.Przelewy24Regulations {
+    margin: 10px 0 50px;
+}
+.Przelewy24Regulations a {
+    text-decoration: underline;
+}
+.przelewy24-insidebg .selected-channel {
+    padding: 10px;
+    border: 1px solid;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+>
+    <body>
+        <referenceBlock name="checkout.payment.methods">
+            <block name="checkout.payment.method.przelewy24"
+                   as="przelewy24"
+                   template="Hyva_RedingoPrzelewy24::component/payment/method/przelewy24.phtml">
+                <arguments>
+                    <argument name="magewire" xsi:type="object">
+                        Hyva\RedingoPrzelewy24\Payment\Method\Przelewy24
+                    </argument>
+                    <argument name="metadata" xsi:type="array">
+                        <item name="title" xsi:type="string">Test</item>
+                        <item name="subtitle" xsi:type="string" translate="true">
+                            Pay online with Przelewy24
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

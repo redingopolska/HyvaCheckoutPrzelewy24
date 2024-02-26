@@ -1,0 +1,18 @@
+{
+	"name": "hyva-themes/magento2-redingo-przelewy24",
+	"description": "Hyva Checkout compatibility module for Przelewy24",
+	"type": "magento2-module",
+	"version": "1.0.0",
+	"require": {
+		"przelewy24/magento2-przelewy24": "^1.1.9"
+	},
+    "license": "See LICENSE.md or https://redingo.pl/hyva-compat-license",
+	"autoload": {
+		"files": [
+			"src/registration.php"
+		],
+		"psr-4": {
+			"Hyva\\RedingoPrzelewy24\\": "src/"
+		}
+	}
+}

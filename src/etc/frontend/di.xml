@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Hyva\CompatModuleFallback\Model\CompatModuleRegistry">
+        <arguments>
+            <argument name="compatModules" xsi:type="array">
+                <item name="hyva-magento2-redingo-przelewy24" xsi:type="array">
+                    <item name="original_module" xsi:type="string">PayPro_Przelewy24</item>
+                    <item name="compat_module" xsi:type="string">Hyva_RedingoPrzelewy24</item>
+                </item>
+            </argument>
+        </arguments>
+    </type>
+     <type name="Hyva\Checkout\Model\Magewire\Payment\PlaceOrderServiceProvider">
+        <arguments>
+            <argument name="placeOrderServiceList" xsi:type="array">
+                <item name="przelewy24"
+                      xsi:type="object">Hyva\RedingoPrzelewy24\Magewire\Payment\PlaceOrderServiceProvider
+                </item>
+            </argument>
+        </arguments>
+    </type>
+</config>

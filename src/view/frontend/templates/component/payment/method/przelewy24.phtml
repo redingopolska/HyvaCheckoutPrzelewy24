@@ -1,0 +1,102 @@
+<?php
+
+declare(strict_types=1);
+
+/** @var Template $block */
+/** @var PayU $magewire */
+
+/** @var Escaper $escaper */
+
+use Hyva\RedingoPrzelewy24\Payment\Method\Przelewy24;
+use Magento\Framework\Escaper;
+use Magento\Framework\View\Element\Template;
+
+?>
+
+<div>
+    <div
+        class="col-span-6"
+        x-data="{
+            showChannelsSection: true,
+            channelID: null,
+        }"
+        wire:payment-method="przelewy24"
+    >
+        <div class="przelewy24-insidebg">
+            <div
+                id="przelewy24-main-payment"
+                x-show="showChannelsSection"
+                x-cloak
+            >
+                <div class="przelewy24-header-wrapper">
+                    <div class="przelewy24-header-logo">
+                        <img
+                            class="przelewy24-logo"
+                            style="max-height:90px"
+                            src="<?= $magewire->getLogo() ?>"
+                        />
+                    </div>
+                    <div class="przelewy24-header-belt"></div>
+                </div>
+                <p class="pl-3 pt-2">
+                    <?= $escaper->escapeHtml(__('Choose a payment method')) ?>
+                </p>
+                <div
+                    id="groups_v"
+                    class="przelewy24-panel-inside-content"
+                >
+                    <div
+                        id="bank-selection-form"
+                        class="przelewy24-groups-wrapper"
+                    >
+                        <?php foreach ($magewire->getChannels() as $channel): ?>
+                            <button
+                                class="przelewy24-group-holder przelewy24-with-logo"
+                                :class="channelID === '<?= $channel['name'] ?>' ? 'przelewy24-active' : ''"
+                                id="bank-<?= $channel['id'] ?>"
+                                wire:click="$set('method', <?= $channel['id'] ?>)"
+                                @click="channelID = '<?= $channel['name'] ?>'"
+                            >
+                                <div class="przelewy24-group-name">
+                                    <?= $channel['name'] ?>
+                                </div>
+                                <div class="przelewy24-group-logo-holder">
+                                    <img
+                                        src="<?= $channel['img_url'] ?>"
+                                        class="przelewy24-group-logo mx-auto"
+                                        alt="<?= $channel['name'] ?>"
+                                    >
+                                </div>
+                            </button>
+                        <?php endforeach ?>
+                    </div>
+                </div>
+                <?php   if ($magewire->getMethodName() !== '') { ?>
+                <p class="selected-channel"><?= $escaper->escapeHtml(__('Selected bank: ')) ?><strong><?= $magewire->getMethodName() ?></strong></p>
+                <?php }  ?>
+            </div>
+            
+            <input
+                type="hidden"
+                id="przelewy24-channel-input"
+                name="przelewy24-channel-input"
+            />
+        </div>
+        <div class="checkout-agreements-block required">
+            <div class="Przelewy24Regulations">
+                <input
+                    class="cursor-pointer"
+                    type="checkbox"
+                    checked
+                    required
+                    name="regulation_accept"
+                    id="przelewy24-regulations-accept"
+                    wire:model="regulationAccept"
+                />
+                <label for="przelewy24-regulations-accept">
+                    <?= $magewire->getTerms() ?>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
