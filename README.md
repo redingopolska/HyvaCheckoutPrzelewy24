@@ -9,7 +9,7 @@ Tested with `hyva-themes/magento2-hyva-checkout v1.1.12`
 
 ## Configuration
 
-Module uses default configuration from PayPro_Przelewy24 in Sores > Configuration > Sales >Payment methods > Przelewy24
+Module uses default configuration from PayPro_Przelewy24 in Stores > Configuration > Sales >Payment methods > Przelewy24
 
 ### TODO
 
